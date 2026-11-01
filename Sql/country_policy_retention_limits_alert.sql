@@ -1,0 +1,15 @@
+create table if not exists country_policy_retention_limits_alert(
+limits_alert_id bigint not null,
+limits_id bigint null,
+alert_type varchar(255) null,
+alert_severity varchar(255) null,
+threshold_percentage bigint null,
+current_usage_percentage bigint null,
+alert_message varchar(255) null,
+notification_channel varchar(255) null,
+alert_generated_date varchar(255) null,
+acknowledged_by varchar(255) null,
+acknowledged_date varchar(255) null,
+resolved_date varchar(255) null,
+alert_status varchar(255) null,
+constraint country_policy_retention_limits_alert_pk primary key(limits_alert_id));
